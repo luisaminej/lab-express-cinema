@@ -1,0 +1,26 @@
+
+<a href = "/movies">Go back</a>
+<hr/>
+{{#with movie}}
+<img src = "{{image}}" alt = "movie image">
+
+
+<h1>{{title}}</h1>
+<br>
+<h2>Director: {{director}}</h2>
+<br>
+<p>Stars</p>
+<ul>
+    {{#each stars}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+<br>
+<p>{{description}}</p>
+<br>
+<ul>
+    {{#each showtimes}}
+    <li>{{this}}</li>
+     {{/each}}
+</ul> 
+{{/with}}
